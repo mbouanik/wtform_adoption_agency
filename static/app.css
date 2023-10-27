@@ -1,0 +1,34 @@
+body {
+  background-color: #7cb9e8;
+  font-size: 1.2rem;
+  color: white;
+}
+img {
+  max-width: 15rem;
+  border-radius: 1rem;
+}
+
+.profile_page {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10%;
+}
+
+.profile_info {
+  padding: 2rem;
+  align-itself: flex-start;
+}
+
+.name {
+  color: #7fffd4;
+}
+
+.available {
+  color: #4a646c;
+}
+
+p {
+  text-align: center;
+}
