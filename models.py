@@ -9,7 +9,7 @@ class Pet(db.Model):
     photo_url: Mapped[str] = mapped_column(Text)
     age: Mapped[int] = mapped_column(Integer)
     note: Mapped[str] = mapped_column(Text)
-    available: Mapped[bool] = mapped_column(Boolean, nullable=False)
+    available: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
 
     def __init__(self, name, spices, photo_url, age, note, available) -> None:
         super(Pet, self).__init__()

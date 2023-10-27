@@ -2,22 +2,39 @@ body {
   background-color: #7cb9e8;
   font-size: 1.2rem;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 img {
   max-width: 15rem;
   border-radius: 1rem;
+  border: 0.3rem solid;
 }
 
+nav {
+  background-color: #6699cc;
+  padding: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  border: solid #6699cc;
+}
+
+nav a:hover {
+  background-color: #7cb9e8;
+}
 .profile_page {
   display: flex;
   padding: 2rem;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 0 10%;
+  margin: 0 10% 0 10%;
 }
 
 .profile_info {
-  padding: 2rem;
+  padding: 1rem;
   align-itself: flex-start;
 }
 
@@ -30,5 +47,18 @@ img {
 }
 
 p {
+  text-align: center;
+}
+
+.profile_link {
+  text-decoration: none;
+  color: white;
+}
+
+a :hover {
+  border: solid 0.3rem #7fffd4;
+}
+
+.title {
   text-align: center;
 }

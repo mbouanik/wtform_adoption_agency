@@ -1,12 +1,14 @@
 {% extends "base.html" %} {% block title %} Home Adoption {% endblock %}
 {% block content %}
-<div class="profile_page">
+<div class="title">
     <h1> Home Adoption </h1>
 </div>
 <div class="profile_page">
     {% for pet in pets %}
     <div class='profile_info'> 
+        <a class='profile_link' href="/pets/{{pet.id}}">
         <img src="{{pet.photo_url}}" alt="">
+        </a>
         <div class=''>
             <p> <span class="name"> {{ pet.name }} </span> is <span class='available'>
                 {% if pet.available == False %} 
