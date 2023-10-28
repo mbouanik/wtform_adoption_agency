@@ -3,13 +3,14 @@
 <div class="title">
     <h1> Home Adoption </h1>
 </div>
+<div class='home'>
 <div class="profile_page">
     {% for pet in pets %}
     <div class='profile_info'> 
         <a class='profile_link' href="/{{pet.id}}">
         <img src="{{pet.photo_url}}" alt="">
         </a>
-        <div class=''>
+        <div class='bottom_img'>
             <p>
                 <span class="name"> {{ pet.name }} </span> is <span class='available'>
                 {% if pet.available == False %} 
@@ -22,5 +23,7 @@
         </div>
     </div>
     {% endfor %}
+</div>
+
 </div>
 {% endblock %}
