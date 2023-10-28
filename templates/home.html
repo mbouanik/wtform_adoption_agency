@@ -6,11 +6,12 @@
 <div class="profile_page">
     {% for pet in pets %}
     <div class='profile_info'> 
-        <a class='profile_link' href="/pets/{{pet.id}}">
+        <a class='profile_link' href="/{{pet.id}}">
         <img src="{{pet.photo_url}}" alt="">
         </a>
         <div class=''>
-            <p> <span class="name"> {{ pet.name }} </span> is <span class='available'>
+            <p>
+                <span class="name"> {{ pet.name }} </span> is <span class='available'>
                 {% if pet.available == False %} 
                      available
                 {% else %} 

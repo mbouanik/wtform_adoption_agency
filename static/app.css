@@ -1,18 +1,25 @@
 body {
   background-color: #7cb9e8;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: white;
   margin: 0;
-  padding: 0;
+  padding: 5rem;
 }
 img {
   max-width: 15rem;
+  max-height: 20rem;
   border-radius: 1rem;
   border: 0.3rem solid;
 }
 
 nav {
   background-color: #6699cc;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   padding: 1.2rem;
 }
 
@@ -28,14 +35,15 @@ nav a:hover {
 }
 .profile_page {
   display: flex;
+  justify-content: center;
   padding: 2rem;
   flex-wrap: wrap;
   margin: 0 10% 0 10%;
 }
 
 .profile_info {
-  padding: 1rem;
-  align-itself: flex-start;
+  /* padding: 1rem; */
+  flex: 0 0 33.3333333%;
 }
 
 .name {
@@ -44,10 +52,6 @@ nav a:hover {
 
 .available {
   color: #4a646c;
-}
-
-p {
-  text-align: center;
 }
 
 .profile_link {
@@ -61,4 +65,14 @@ a :hover {
 
 .title {
   text-align: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+}
+.profile_details {
+  padding: 2rem;
+}
+.profile_picture {
 }
