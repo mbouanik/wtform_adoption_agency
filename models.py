@@ -11,13 +11,7 @@ class Pet(db.Model):
     notes: Mapped[str] = mapped_column(Text)
     available: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
 
-    def __init__(self, name, spices, photo_url, age, notes, available) -> None:
-        super(Pet, self).__init__()
-        self.name = name
-        self.species = spices
-        self.photo_url = photo_url
-        self.age = age
-        self.notes = notes
-        self.available = available
+    def __init__(self, **kwargs) -> None:
+        super(Pet, self).__init__(**kwargs)
 
 

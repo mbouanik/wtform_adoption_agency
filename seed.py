@@ -3,6 +3,9 @@ from init import db
 from models import Pet
 
 
+"""
+Populating the database for testing purpose
+"""
 with app.app_context():
     db.drop_all()
     db.create_all()

@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-
+"""
+Initializing the app, db and connecting the routes to the app 
+"""
 db = SQLAlchemy()
 
 def create_app():
