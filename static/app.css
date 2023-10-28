@@ -35,15 +35,14 @@ nav a:hover {
 }
 .profile_page {
   display: flex;
-  justify-content: center;
   padding: 2rem;
   flex-wrap: wrap;
   margin: 0 10% 0 10%;
 }
 
 .profile_info {
-  /* padding: 1rem; */
-  flex: 0 0 33.3333333%;
+  padding: 2rem;
+  flex: 0 0 20%;
 }
 
 .name {
