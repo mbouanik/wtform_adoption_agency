@@ -15,9 +15,9 @@
     {{ form.photo_url.label }} {{ form.photo_url }} 
     {{ form.notes.label }} {{ form.notes }}
     {{ form.available.label }} {{ form.available }}
+    {{ form.submit }}
     {% for err in form.errors %}
         {{ err }}
     {% endfor %}
-    <button>Submit</button>
 </form>
 {% endblock %}

@@ -3,16 +3,16 @@
 <h1>Add Pet form</h1>
 <form action="" method="POST">
     {{ form.csrf_token }}
-    {% for field in form if field.widget.input_type != 'hidden' %}
-    <div>
-        {{ field.label }} {{ field}}
-        {% for err in field.errors %}
-            {{ err }}
-        {% endfor%}
-    </div>
-        
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name }}
+    {{ form.species.label }} {{ form.species }}
+    {{ form.photo_url.label }} {{ form.photo_url }} 
+    {{ form.notes.label }} {{ form.notes }}
+    {{ form.available.label }} {{ form.available }}
+    {{ form.submit }}
+    {% for err in form.errors %}
+        {{ err }}
     {% endfor %}
-    <button>Submit</button>
 </form>
 
 {% endblock %}
